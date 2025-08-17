@@ -1,0 +1,37 @@
+.omnicoder-ui-card-base {
+  @apply flex flex-col gap-4 border;
+  @apply rounded-lg shadow-md;
+  @apply overflow-hidden;
+
+  &-variant-primary {
+    &-header {
+      @apply px-4 pt-4;
+
+      &-title {
+        @apply font-medium text-2xl;
+      }
+    }
+
+    &-content {
+      @apply px-4;
+    }
+
+    &-footer {
+      @apply px-4 pb-4;
+    }
+  }
+}
+
+.omnicoder-ui-theme-light {
+  .omnicoder-ui-card {
+    @apply bg-white border-gray-200;
+    @apply text-gray-900;
+  }
+}
+
+.omnicoder-ui-theme-dark {
+  .omnicoder-ui-card {
+    @apply bg-gray-800 border-gray-700;
+    @apply text-white;
+  }
+}

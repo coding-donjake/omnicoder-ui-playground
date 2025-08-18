@@ -25,13 +25,11 @@
 .omnicoder-ui-theme-light {
   .omnicoder-ui-card {
     @apply bg-white border-gray-200;
-    @apply text-gray-900;
   }
 }
 
 .omnicoder-ui-theme-dark {
   .omnicoder-ui-card {
     @apply bg-gray-800 border-gray-700;
-    @apply text-white;
   }
 }

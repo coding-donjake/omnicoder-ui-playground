@@ -19,8 +19,10 @@ const Card: React.FC<CardProps> = ({
   footer,
   children,
 }) => {
+  const classNames = ["omnicoder-ui-card", "omnicoder-ui-card-base", `omnicoder-ui-card-base-variant-${variant}`, cls];
+
   return (
-    <div className={`omnicoder-ui-card omnicoder-ui-card-base omnicoder-ui-card-base-variant-${variant} ${cls}`}>
+    <div className={classNames.join(" ")}>
       <div className={`omnicoder-ui-card-base-variant-${variant}-header`}>
         {!headless ? <div className={`omnicoder-ui-card-base-variant-${variant}-header-title`}>{title}</div> : null}
       </div>

@@ -1,3 +1,4 @@
+import "../omnicoder-ui-style.scss";
 import "./style.scss";
 
 interface ScreenProps {

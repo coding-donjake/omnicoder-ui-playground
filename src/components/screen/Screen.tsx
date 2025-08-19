@@ -1,5 +1,5 @@
-import "../omnicoder-ui-style.scss";
-import "./style.scss";
+import "../omnicoder-ui-style.css";
+import "./style.css";
 
 interface ScreenProps {
   cls?: string;

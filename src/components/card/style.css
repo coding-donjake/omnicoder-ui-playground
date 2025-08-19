@@ -1,0 +1,25 @@
+.omnicoder-ui-card-base {
+  @apply flex flex-col gap-4 border;
+  @apply rounded-lg shadow-md;
+  @apply overflow-hidden;
+}
+.omnicoder-ui-card-base-variant-primary-header {
+  @apply px-4 pt-4;
+}
+.omnicoder-ui-card-base-variant-primary-header-title {
+  @apply font-medium text-2xl;
+}
+.omnicoder-ui-card-base-variant-primary-content {
+  @apply px-4;
+}
+.omnicoder-ui-card-base-variant-primary-footer {
+  @apply px-4 pb-4;
+}
+
+.omnicoder-ui-theme-light .omnicoder-ui-card {
+  @apply bg-white border-gray-200;
+}
+
+.omnicoder-ui-theme-dark .omnicoder-ui-card {
+  @apply bg-gray-800 border-gray-700;
+}

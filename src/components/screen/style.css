@@ -1,0 +1,11 @@
+.omnicoder-ui-screen {
+  @apply flex flex-row gap-4;
+  @apply w-screen h-screen max-h-screen p-4;
+}
+.omnicoder-ui-screen-content {
+  @apply flex flex-col gap-4 flex-1;
+  @apply max-h-full;
+}
+.omnicoder-ui-screen-content-wrapper {
+  @apply flex flex-col gap-2 flex-1;
+}

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Button from "./components/button/Button";
 import Card from "./components/card/Card";
-import "./components/omnicoder-ui-style.scss";
+import "./components/omnicoder-ui-style.css";
 import Wrapper from "./support/Wrapper";
 import { faIcons } from "@fortawesome/free-solid-svg-icons";
 

@@ -1,0 +1,25 @@
+/* base */
+.omnicoder-ui-input-base {
+  @apply flex flex-col;
+}
+
+.omnicoder-ui-input-base label {
+  @apply text-sm font-medium;
+}
+
+.omnicoder-ui-input-base input {
+  @apply w-full p-2 border rounded-lg;
+  @apply text-sm;
+}
+
+/* light theme */
+.omnicoder-ui-theme-light .omnicoder-ui-input-base input {
+  @apply bg-gray-50 border-gray-300 focus:border-blue-500 focus:ring-blue-500;
+  @apply text-gray-900;
+}
+
+/* dark theme */
+.omnicoder-ui-theme-dark .omnicoder-ui-input-base input {
+  @apply bg-gray-700 border-gray-600 focus:border-blue-500 focus:ring-blue-500;
+  @apply text-white placeholder-gray-400;
+}

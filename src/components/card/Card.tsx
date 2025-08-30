@@ -3,31 +3,35 @@ import "./style.css";
 interface CardProps {
   cls?: string;
   variant?: "primary";
-  headless?: boolean;
-  title?: React.ReactNode;
-  footless?: boolean;
+  header: CardHeader;
   footer?: React.ReactNode;
   children?: React.ReactNode;
 }
 
-const Card: React.FC<CardProps> = ({
-  cls = "",
-  variant = "primary",
-  headless = false,
-  title,
-  footless = false,
-  footer,
-  children,
-}) => {
+type CardHeader = {
+  headless?: boolean;
+  title?: React.ReactNode;
+  component?: React.ReactNode;
+};
+
+const Card: React.FC<CardProps> = ({ cls = "", variant = "primary", header, footer, children }) => {
   const classNames = ["omnicoder-ui-card", "omnicoder-ui-card-base", `omnicoder-ui-card-base-variant-${variant}`, cls];
 
   return (
     <div className={classNames.join(" ")}>
-      <div className={`omnicoder-ui-card-base-variant-${variant}-header`}>
-        {!headless ? <div className={`omnicoder-ui-card-base-variant-${variant}-header-title`}>{title}</div> : null}
-      </div>
+      {!header.headless ? (
+        header.component ? (
+          header.component
+        ) : (
+          <div className={`omnicoder-ui-card-base-variant-${variant}-header`}>
+            <div className={`omnicoder-ui-card-base-variant-${variant}-header-title`}>{header.title}</div>
+          </div>
+        )
+      ) : (
+        <div></div>
+      )}
       <div className={`omnicoder-ui-card-base-variant-${variant}-content`}>{children}</div>
-      {!footless ? <div className={`omnicoder-ui-card-base-variant-${variant}-footer`}>{footer}</div> : null}
+      {footer ? footer : <div></div>}
     </div>
   );
 };

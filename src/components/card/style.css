@@ -3,15 +3,19 @@
   @apply rounded-lg shadow-md;
   @apply overflow-hidden;
 }
+
 .omnicoder-ui-card-base-variant-primary-header {
   @apply px-4 pt-4;
 }
+
 .omnicoder-ui-card-base-variant-primary-header-title {
   @apply font-medium text-2xl;
 }
+
 .omnicoder-ui-card-base-variant-primary-content {
   @apply px-4;
 }
+
 .omnicoder-ui-card-base-variant-primary-footer {
   @apply px-4 pb-4;
 }

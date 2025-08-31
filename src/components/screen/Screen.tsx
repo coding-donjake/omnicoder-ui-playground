@@ -9,9 +9,9 @@ interface ScreenProps {
 
 const Screen: React.FC<ScreenProps> = ({ cls = "", theme = "light", children }) => {
   return (
-    <div className={`omnicoder-ui-screen omnicoder-ui-theme-${theme} ${cls}`}>
-      <div className="omnicoder-ui-screen-content">
-        <div className="omnicoder-ui-screen-content-wrapper">{children}</div>
+    <div className={`omnicoder-ui-screen omnicoder-ui-screen-base omnicoder-ui-theme-${theme} ${cls}`}>
+      <div className="omnicoder-ui-screen-base-content">
+        <div className="omnicoder-ui-screen-base-content-wrapper">{children}</div>
       </div>
     </div>
   );

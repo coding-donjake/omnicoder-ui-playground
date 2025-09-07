@@ -8,7 +8,7 @@
 }
 
 .omnicoder-ui-input-base input {
-  @apply w-full p-2 border rounded-lg;
+  @apply flex-1 w-full p-2 border rounded-lg;
   @apply text-sm;
 }
 

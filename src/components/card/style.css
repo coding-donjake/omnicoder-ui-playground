@@ -13,7 +13,8 @@
 }
 
 .omnicoder-ui-card-base-variant-primary-content {
-  @apply flex-1 px-4;
+  @apply flex-1;
+  @apply px-4 max-h-full;
 }
 
 .omnicoder-ui-card-base-variant-primary-footer {
